@@ -74,6 +74,9 @@ data:
   url: data/marvedc.csv
 
 selection:
+  mouHov:
+    type: single
+    'on': mouseover
   select gender:
     type: single
     fields:
@@ -117,6 +120,10 @@ encoding:
   
   size:
     value: 8
+    condition:
+      selection: mouHov
+      value: 10
+      legend: null
 
   tooltip:
     aggregate: sum
@@ -150,6 +157,9 @@ height: 500
 data:
   url: data/marvedc.csv
 selection:
+  mouHov:
+    type: single
+    'on': mouseover
   Select gender:
     type: single
     fields:
@@ -189,6 +199,10 @@ encoding:
       title: false
   size:
     value: 8
+    condition:
+      selection: mouHov
+      value: 10
+      legend: null
   tooltip:
     aggregate: sum
     field: number_dc
