@@ -13,10 +13,11 @@ window.onload = function () {
 		},
 		"legend": {
 			"labelColor": 'black'
+
 		}
 	};
 
-	var opts = {"mode": "vega-lite", "renderer": "svg", "config": config };
+	var opts = {"mode": "vega-lite", "renderer": "svg", "actions": {"export": false, "source": false, "editor": false} };
 
 
 	// Render the ```vis as a div and save the json spec

@@ -1,2 +1,3 @@
-# Redesign
-mini project: a static vis in to interactive vis
+# visdown-template
+
+Starter template to get started with Visdown
